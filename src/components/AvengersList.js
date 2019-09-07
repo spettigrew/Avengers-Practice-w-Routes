@@ -8,7 +8,7 @@ function AvengersList(props) {
                 <div className="character-card" key={avenger.id}>
                     <img src={avenger.thumbnail} alt={avenger.name} />
                     <h3
-                        onClick={() => props.history.push(`/avengers/${avenger.id}/info`)}
+                        onClick={() => props.history.push(`/avengers/${avenger.id}`)}
                     >
                         {avenger.name}
                     </h3>

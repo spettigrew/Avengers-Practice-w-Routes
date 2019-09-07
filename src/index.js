@@ -6,8 +6,7 @@ import Home from "./components/Home";
 import AvengersList from "./components/AvengersList";
 import Avenger from "./components/Avenger";
 
-import avengersData from "../data/avengersData";
-
+import { data } from "../src/components/data";
 import "./styles.css";
 
 function App() {
@@ -30,13 +29,13 @@ function App() {
                 exact
                 path="/avengers"
                 render={props => (
-                    <AvengersList {...props} avengersList={avengersData} />
+                    <AvengersList {...props} avengersList={data} />
                 )}
             />
             <Route
                 path="/avengers/:avengerId"
                 render={props => (
-                    <Avenger {...props} avengersList={avengersData} /> // spread in props --> same as "match={props.match} location={props.location} history={props.history}"
+                    <Avenger {...props} avengersList={data} /> // spread in props --> same as "match={props.match} location={props.location} history={props.history}"
                 )}
             />
         </div>
@@ -52,6 +51,3 @@ ReactDOM.render(
 );
 
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA

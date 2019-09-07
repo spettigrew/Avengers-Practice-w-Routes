@@ -2,10 +2,9 @@ import React from 'react'
 
  const AvengerMovies = props => {
     return (
-        <div>
-            {props.movies.map(movie => <div key={movie}>{movie}</div>)}
-        </div>
-    )
+        <ul>
+            {props.avenger.movies.map(movie => <li key={movie}>{movie}</li>)}/</ul>
+        )
 }
 
 export default AvengerMovies

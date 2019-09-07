@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import './App.css';
+import "./styles.css";
 
 import Home from "./components/Home";
 import AvengersList from "./components/AvengersList"
@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   render() {
-    const { avengers } = this.state;
+    const {avengers} = this.state;
   return (
     <div className="App">
       <ul className="navbar">

@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import AvengersList from "./components/AvengersList";
 import Avenger from "./components/Avenger";
 
-import { data } from "../src/components/data";
+import data from "./data";
 import "./styles.css";
 
 function App() {

@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import AvengersList from "./components/AvengersList"
 import AvengerPage from './components/AvengerPage';
 
-import avengers from './components/data';
+import { avengers } from './data';
 
 class App extends Component {
   constructor() {

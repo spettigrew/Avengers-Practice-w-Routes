@@ -9,7 +9,7 @@ import AvengerMovies from './AvengerMovies';
 function Avenger(props) {
     console.log(props);
     const avenger = props.avengersList.find(
-        avenger => avenger.id === parseInt(props.match.params.avengerId, 10)
+        avenger => avenger.id === Number(props.match.params.avengerId, 10)
     );
 
     return (
@@ -20,8 +20,8 @@ function Avenger(props) {
                 <h4>({avenger.nickname})</h4>
 
                 <nav>
-                    <Link to={`/avengers/${avenger.id}/info`}>Info</Link>
-                    <Link to={`/avengers/${avenger.id}/movies`}>Movies</Link>
+                    <Link to={`/avengers/${avenger.id}/info`}>Info </Link>
+                    <Link to={`/avengers/${avenger.id}/movies`}>Movies </Link>
                 </nav>
                 <Route
                     path="/avengers/:avengerId/info"
@@ -46,3 +46,6 @@ Avenger.propTypes = {
 };
 
 export default Avenger;
+
+// parseInt === Number
+// The parseInt() function parses a string and returns an integer.

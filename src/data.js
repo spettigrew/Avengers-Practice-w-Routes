@@ -1,6 +1,6 @@
 // Data gathered from https://www.marvel.com/characters
 
-const avengers = [
+ const avengers = [
     {
         id: 1,
         name: 'Iron Man',
@@ -125,7 +125,7 @@ const avengers = [
     },
     {
         id: 8,
-        name: 'Black Panter',
+        name: 'Black Panther',
         nickname: 'King of Wakanda',
         description:
             'T’Challa is the king of the secretive and highly advanced African nation of Wakanda - as well as the powerful warrior known as the Black Panther.',
@@ -149,3 +149,4 @@ const avengers = [
     }
 ];
 
+export default avengers;

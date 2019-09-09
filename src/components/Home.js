@@ -7,7 +7,7 @@ function Home() {
         <div>
             <h1>Avengers Database</h1>
             <h4>Warning! This is classified information!</h4>
-            <Link to="/avengers">Enter</Link>
+            <Link to="/avengers">Enter Here</Link>
         </div>
     )
 }

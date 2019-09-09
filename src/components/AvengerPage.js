@@ -14,7 +14,7 @@ function AvengerPage(props) {
                 <h1>{avenger.name}</h1>
                 <h4>({avenger.nickname})</h4>
             </div>
-            <Link to={`/avengers/${props.match.params.id}/details`}>Avenger Details</Link>
+            <Link to={`/avengers/${props.match.params.id}/details`}>Avenger Details </Link>
             <Link to={`/avengers/${props.match.params.id}/movies`}>Movies </Link>
             <Route path="/avengers/:id/details" render={props => <AvengerDetails details={avenger.description}/> } />
             <Route path="/avengers/:id/movies" render={props => <AvengerMovies movies={avenger.movies} /> } />

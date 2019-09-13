@@ -32,5 +32,3 @@ export default AvengersList;
 // function routeToAvenger(props, avenger) {
 //     props.history.push('/avengers/${avenger.id}');
 // }
-
-// export default AvengersList;

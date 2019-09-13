@@ -9,7 +9,7 @@ import AvengerMovies from './AvengerMovies';
 function Avenger(props) {
     console.log(props);
     const avenger = props.avengersList.find(
-        avenger => avenger.id === Number(props.match.params.avengerId, 10)
+        avenger => avenger.id === parseInt(props.match.params.avengerId, 10)
     );
 
     return (
